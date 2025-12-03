@@ -4,7 +4,7 @@ import "./facialExpression.css";
 
 import axios from './../../node_modules/axios/lib/axios';
 
-export default function FacialExpression( {setSongs}) {
+export default function FacialExpression( {setSongs, setCurrentMood}) {
     const videoRef = useRef();
 
     const loadModels = async () => {
@@ -41,12 +41,12 @@ export default function FacialExpression( {setSongs}) {
             }
         }
       //http://localhost:3000/songs?mood=happy
-        axios.get(`http://localhost:3000/songs?mood=${_expression}`).then((response)=>{
-                console.log(response.data);
-                setSongs(response.data.song)
+       axios.get(`http://localhost:3000/songs?mood=${_expression}`).then((response)=>{
+               console.log(response.data);
+               setSongs(response.data.song)
+               setCurrentMood(_expression)
 
-                
-        })
+       })
 
 
     }
