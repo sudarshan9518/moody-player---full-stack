@@ -1,47 +1,52 @@
-# Moody-Player 🎵  
+# 🎵 Moody-Player — AI Mood-Based Music Recommendation (MERN Stack)
 
-## Description  
-Moody-Player is a full-stack music player application (frontend + backend) allowing users to browse, play, and manage music. It provides a seamless, modern web interface and a backend API for music streaming / management.  
+Moody-Player is a **full MERN stack application** that detects a user's mood using **AI-based facial emotion recognition** and recommends music that matches their emotional state (Happy, Sad, Neutral, Surprised).  
 
-This project aims to deliver a clean, intuitive UI and robust backend — bridging the gap between easy-to-use frontend and powerful server-side functionality.  
+This project combines **React frontend**, **Node.js/Express backend**, and **MongoDB database** to deliver a smart, seamless, AI–powered music experience.
 
-## Features  
-- User-friendly web UI (frontend) for browsing and playing music  
-- Backend API for serving music files / metadata (via REST or other API)  
-- Supports various music file types / playlists (as implemented)  
-- (You can list your implemented features here — e.g. search, playlists, authentication, etc.)  
+---
 
-## Tech Stack / Architecture  
-- Frontend: HTML / CSS / JavaScript  (plus any frontend framework you use)  
-- Backend: Node.js / Express (or relevant backend stack)  
-- Project structure:  
-  - `frontend/` — code for UI  
-  - `backend/` — server-side code / API  
+## ✨ Features
 
-## Getting Started  
+### 🎭 AI Mood Detection
+- Detects user's mood using webcam  
+- Supports: **Happy**, **Sad**, **Neutral**, **Surprised**  
+- Uses ML/face-api.js/TF.js model for real-time emotion recognition
 
-### Prerequisites  
-- Node.js (version X or higher)  
-- npm / yarn  
+### 🎶 Mood-Based Music Recommendation
+- Auto-suggests music based on detected mood  
+- Songs stored in **MongoDB database**  
+- Smart playlist generation per emotion  
 
-### Installation & Setup  
+### 🌐 Full MERN Architecture
+- **React** for UI and camera input  
+- **Node.js + Express** for API and music logic  
+- **MongoDB** for storing music, moods, user data  
+- End-to-end integration with clean REST API  
 
-```bash
-# Clone the repository  
-git clone https://github.com/sudarshan9518/moody-player---full-stack.git  
+### 🎧 Built-in Music Player
+- Play / Pause / Next / Auto-play  
+- Smooth and clean UI  
 
-# Navigate to backend, install dependencies  
-cd moody-player---full-stack/backend  
-npm install  
+---
 
-# (If needed) Navigate to frontend, install dependencies  
-cd ../frontend  
-npm install  
+## 🛠️ Tech Stack
 
-# Start the backend server  
-cd ../backend  
-npm start  
+### **Frontend (React)**
+- React.js  
+- Context API / Redux (if used)  
+- face-api.js / TensorFlow.js  
+- Modern UI with CSS / Tailwind / styled-components  
 
-# Start the frontend (if applicable)  
-cd ../frontend  
-npm start  
+### **Backend**
+- Node.js  
+- Express.js  
+- REST API  
+
+### **Database**
+- MongoDB  
+- Mongoose ORM  
+
+---
+
+
